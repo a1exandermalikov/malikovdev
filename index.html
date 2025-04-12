@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Malikov Dev</title>
+		<link
+			href="https://fonts.googleapis.com/css?family=Kaushan+Script%7CPoppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles/basic.css" />
+		<link rel="stylesheet" href="styles/layout.css" />
+		<link rel="stylesheet" href="styles/animation.css" />
+		<script>
+			window.dataLayer = window.dataLayer || []
+			function gtag() {
+				dataLayer.push(arguments)
+			}
+			gtag('js', new Date())
+			gtag('config', 'UA-125314689-11')
+		</script>
+	</head>
+	<body>
+		<div class="bg-img">
+			<canvas id="connectionCanvas"></canvas>
+		</div>
+		<div class="page">
+			<div class="hero">
+				<header class="header">
+					<h1 class="header__title hoverable">malikovdev.uz</h1>
+					<nav>
+						<ul>
+							<li><a class="hoverable" href="#about">About</a></li>
+							<li><a class="hoverable" href="#services">What I do</a></li>
+							<li><a class="hoverable" href="#works">Works</a></li>
+							<li><a class="hoverable" href="#">Blog</a></li>
+							<li><a class="hoverable" href="#">Contact</a></li>
+						</ul>
+					</nav>
+				</header>
+				<div class="hero__content">
+					<div class="hero__content__title">
+						<div style="height: 21vh">
+							<h1 id="typed-title">Developer</h1>
+						</div>
+					</div>
+					<div class="hero__content__icon">
+						<a class="hoverable" href="https://instagram.com/a1exander_malikov">
+							<svg
+								class="hoverable"
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+							>
+								<rect width="24" height="24" fill="none" />
+								<path
+									class="hoverable"
+									fill="white"
+									d="M12 8.75a3.25 3.25 0 1 0 0 6.5a3.25 3.25 0 0 0 0-6.5"
+								/>
+								<path
+									class="hoverable"
+									fill="white"
+									fill-rule="evenodd"
+									d="M6.77 3.082a47.5 47.5 0 0 1 10.46 0c1.899.212 3.43 1.707 3.653 3.613a45.7 45.7 0 0 1 0 10.61c-.223 1.906-1.754 3.401-3.652 3.614a47.5 47.5 0 0 1-10.461 0c-1.899-.213-3.43-1.708-3.653-3.613a45.7 45.7 0 0 1 0-10.611C3.34 4.789 4.871 3.294 6.77 3.082M17 6a1 1 0 1 0 0 2a1 1 0 0 0 0-2m-9.75 6a4.75 4.75 0 1 1 9.5 0a4.75 4.75 0 0 1-9.5 0"
+									clip-rule="evenodd"
+								/>
+							</svg>
+						</a>
+						<a class="hoverable" href="https://t.me/alexander_malikov">
+							<svg
+								class="hoverable"
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+							>
+								<rect width="24" height="24" fill="none" />
+								<g fill="none" fill-rule="evenodd">
+									<path
+										class="hoverable"
+										d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"
+									/>
+									<path
+										class="hoverable"
+										fill="white"
+										d="M19.777 4.43a1.5 1.5 0 0 1 2.062 1.626l-2.268 13.757c-.22 1.327-1.676 2.088-2.893 1.427c-1.018-.553-2.53-1.405-3.89-2.294c-.68-.445-2.763-1.87-2.507-2.884c.22-.867 3.72-4.125 5.72-6.062c.785-.761.427-1.2-.5-.5c-2.302 1.738-5.998 4.381-7.22 5.125c-1.078.656-1.64.768-2.312.656c-1.226-.204-2.363-.52-3.291-.905c-1.254-.52-1.193-2.244-.001-2.746z"
+									/>
+								</g>
+							</svg>
+						</a>
+						<a class="hoverable" href="https://github.com/alexandermalikov">
+							<svg
+								class="hoverable"
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+							>
+								<rect fill="none" />
+								<path
+									class="hoverable"
+									fill="white"
+									d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"
+								/>
+							</svg>
+						</a>
+						<a class="hoverable" href="https://youtube.com/@a1exander">
+							<svg
+								class="hoverable"
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+							>
+								<path
+									class="hoverable"
+									fill="white"
+									d="m10 15l5.19-3L10 9zm11.56-7.83c.13.47.22 1.1.28 1.9c.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83c-.25.9-.83 1.48-1.73 1.73c-.47.13-1.33.22-2.65.28c-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44c-.9-.25-1.48-.83-1.73-1.73c-.13-.47-.22-1.1-.28-1.9c-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83c.25-.9.83-1.48 1.73-1.73c.47-.13 1.33-.22 2.65-.28c1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44c.9.25 1.48.83 1.73 1.73"
+								/>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<a href="#about">
+					<svg
+						class="hoverable hero__content__scroll"
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+					>
+						<path
+							class="hoverable"
+							fill="none"
+							stroke="white"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="m7 10l5 5m0 0l5-5"
+						/>
+					</svg>
+				</a>
+			</div>
+			<section class="about" id="about">
+				<div class="about__content">
+					<div class="about__content__img">
+						<img src="./images/profile.jpg" alt="developer" />
+					</div>
+					<div class="about__content__text">
+						<h1>
+							I'm Alexander Malikov, <br />
+							Web Designer & Web Developer <br />
+							from Uzbekistan
+						</h1>
+						<p>
+							I have rich experience in website design, development, and full
+							customization. With over 3 years in the field, I specialize in
+							creating beautiful, responsive, and interactive websites with
+							smooth animations and clean code. I’m skilled in HTML, CSS,
+							JavaScript, Tailwind, jQuery, Bootstrap, and animation libraries —
+							and always focused on delivering user-friendly, high-performance
+							results. I’d love to talk with you about your project and bring
+							your ideas to life. Feel free to reach out via email anytime!
+						</p>
+						<a class="hoverable" href="">Download resume</a>
+					</div>
+				</div>
+			</section>
+			<section class="services" id="services">
+				<canvas id="connectionCanvasBlack"></canvas>
+				<div class="services__title">
+					<h2>What I do</h2>
+				</div>
+				<div class="services__content">
+					<div class="services__content__card">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+							<path
+								fill="#ffd000"
+								d="M12.812 6.222a1.25 1.25 0 0 0-2.048-.934C8.366 7.278 6.905 8.8 6.06 10.198C5.168 11.667 5 12.93 5 14.247a5.5 5.5 0 1 0 11 0c0-1.795-.89-3.006-1.59-3.957l-.203-.278c-.724-1.004-1.355-2.008-1.395-3.791m4.102 4.199A9.5 9.5 0 0 1 21 9.5c4.909 0 8.948 3.723 9.448 8.5H26.25A6.25 6.25 0 0 0 20 24.25v4.198a9.4 9.4 0 0 1-2.062-.452a54 54 0 0 1-.208 2.553q1.098.312 2.27.41v3.791A6.25 6.25 0 0 0 26.25 41h10.5A6.25 6.25 0 0 0 43 34.75v-10.5A6.25 6.25 0 0 0 36.75 18h-3.791c-.508-6.16-5.668-11-11.96-11a11.95 11.95 0 0 0-5.518 1.341c.105.162.221.327.348.503l.19.257c.25.335.579.776.896 1.32M32.906 20.5h3.843a3.75 3.75 0 0 1 3.75 3.75v10.5a3.75 3.75 0 0 1-3.75 3.75h-10.5a3.75 3.75 0 0 1-3.75-3.75v-3.843A12.006 12.006 0 0 0 32.906 20.5m-2.525 0a9.51 9.51 0 0 1-7.882 7.882V24.25a3.75 3.75 0 0 1 3.75-3.75zm-24.55.167q.087-.203.188-.404a7.47 7.47 0 0 0 4.481 1.485a7.47 7.47 0 0 0 4.484-1.488q.102.202.19.409c.7 1.649.826 3.665.826 5.278c0 2.64-.408 6.68-1.156 10.08c-.373 1.693-.845 3.3-1.43 4.513c-.29.603-.641 1.177-1.073 1.616c-.435.442-1.052.844-1.837.844s-1.402-.401-1.837-.843c-.432-.44-.783-1.013-1.074-1.616c-.586-1.213-1.06-2.82-1.433-4.513c-.75-3.4-1.16-7.44-1.16-10.081c0-1.614.128-3.63.831-5.28"
+							/>
+						</svg>
+						<h3>UI/UX Design</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+							architecto laboriosam voluptate. Lorem ipsum dolor sit amet.
+						</p>
+					</div>
+					<div class="services__content__card">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+							<path
+								fill="none"
+								stroke="#ffd000"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="1.5"
+								d="M5.143 14A7.8 7.8 0 0 1 4 9.919C4 5.545 7.582 2 12 2s8 3.545 8 7.919A7.8 7.8 0 0 1 18.857 14M7.383 17.098c-.092-.276-.138-.415-.133-.527a.6.6 0 0 1 .382-.53c.104-.041.25-.041.54-.041h7.656c.291 0 .436 0 .54.04a.6.6 0 0 1 .382.531c.005.112-.041.25-.133.527c-.17.511-.255.767-.386.974a2 2 0 0 1-1.2.869c-.238.059-.506.059-1.043.059h-3.976c-.537 0-.806 0-1.043-.06a2 2 0 0 1-1.2-.868c-.131-.207-.216-.463-.386-.974M15 19l-.13.647c-.14.707-.211 1.06-.37 1.34a2 2 0 0 1-1.113.912C13.082 22 12.72 22 12 22s-1.082 0-1.387-.1a2 2 0 0 1-1.113-.913c-.159-.28-.23-.633-.37-1.34L9 19m3-3v-5"
+								color="#ffd000"
+							/>
+						</svg>
+						<h3>Brand idenity</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+							architecto laboriosam voluptate. Lorem ipsum dolor sit amet.
+						</p>
+					</div>
+					<div class="services__content__card">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+							<path
+								fill="#ffd000"
+								d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m-5 14H4v-4h11zm0-5H4V9h11zm5 5h-4V9h4z"
+							/>
+						</svg>
+						<h3>Web design</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+							architecto laboriosam voluptate. Lorem ipsum dolor sit amet.
+						</p>
+					</div>
+					<div class="services__content__card">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+							<path
+								fill="none"
+								stroke="#ffd000"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="1.5"
+								d="M6.5 9.5a5.5 5.5 0 1 1 11 0V16c0 1.414 0 2.121-.44 2.56c-.439.44-1.146.44-2.56.44h-5c-1.414 0-2.121 0-2.56-.44c-.44-.439-.44-1.146-.44-2.56zM20 11v6m-5 2v3m-6-3v3M4 11v6m6-13L8.5 2M14 4l1.5-2m-9 8h11"
+								color="#ffd000"
+							/>
+						</svg>
+						<h3>Mobile apps</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+							architecto laboriosam voluptate. Lorem ipsum dolor sit amet.
+						</p>
+					</div>
+					<div class="services__content__card">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+							<path
+								fill="#ffd000"
+								d="m164.5 107.4l33.4-73.5c5.5-12.1.1-26.3-11.9-31.8S159.7 2 154.2 14L128 71.7l-26.1-57.6C96.4 2 82.1-3.3 70.1 2.1s-17.4 19.8-12 31.8l33.4 73.5c-10.2 7.1-18.2 17-22.9 28.6h-17l-4.1-20.7c-2.6-13-15.2-21.4-28.2-18.8S-2.1 111.7.5 124.7l8 40C10.7 175.9 20.6 184 32 184h32v23.3l-37.8 9.5c-9.5 2.4-16.6 10.2-17.9 19.9l-8 56c-1.9 13.1 7.2 25.3 20.4 27.2s25.3-7.2 27.2-20.4l5.7-40l18.4-4.6c10.7 19.7 31.8 33.1 56 33.1s45.3-13.4 56.1-33.2l18.4 4.6l5.7 40c1.9 13.1 14 22.2 27.2 20.4s22.2-14 20.4-27.2l-8-56c-1.4-9.7-8.5-17.5-17.9-19.9l-37.9-9.4V184h32c11.4 0 21.3-8.1 23.5-19.3l8-40c2.6-13-5.8-25.6-18.8-28.2s-25.6 5.8-28.2 18.8l-4.2 20.7h-17c-4.7-11.6-12.7-21.5-22.9-28.6zM496 286.5l65.6-47c10.8-7.7 13.3-22.7 5.6-33.5s-22.7-13.3-33.5-5.6l-51.4 36.8l6.1-62.9c1.3-13.2-8.4-24.9-21.6-26.2s-24.9 8.4-26.2 21.6l-7.8 80.3c-12.3 1-24.2 5.6-34.1 13.3l-14.7-8.5l6.8-20c4.2-12.6-2.5-26.2-15-30.4s-26.2 2.5-30.4 15L332.3 258c-3.7 10.8.8 22.8 10.7 28.5l27.7 16l-11.7 20.2l-37.5-10.7c-9.4-2.7-19.5.6-25.5 8.3l-34.9 44.5c-8.2 10.4-6.4 25.5 4.1 33.7s25.5 6.4 33.7-4.1l25-31.8l18.2 5.2c-.5 22.6 11 44.7 32 56.8s45.9 11 65.2-.7l13.6 13.2l-15.1 37.5c-4.9 12.3 1 26.3 13.3 31.2s26.3-1 31.2-13.3l21.2-52.5c3.6-9.1 1.4-19.4-5.6-26.2l-28-27.1l11.6-20.1l27.7 16c9.9 5.7 22.5 3.7 30-4.9l27-30.7c8.7-10 7.8-25.1-2.2-33.9s-25.1-7.8-33.9 2.2l-13.9 15.9l-14.7-8.5c1.7-12.4-.2-25-5.5-36.2"
+							/>
+						</svg>
+						<h3>Quality Assurance & Bug Fixing</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+							architecto laboriosam voluptate. Lorem ipsum dolor sit amet.
+						</p>
+					</div>
+					<div class="services__content__card">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+							<path
+								fill="none"
+								stroke="#ffd000"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="32"
+								d="m344 280l88-88m-200 24l64 64M80 320l104-104"
+							/>
+							<circle
+								cx="456"
+								cy="168"
+								r="24"
+								fill="none"
+								stroke="#ffd000"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="32"
+							/>
+							<circle
+								cx="320"
+								cy="304"
+								r="24"
+								fill="none"
+								stroke="#ffd000"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="32"
+							/>
+							<circle
+								cx="208"
+								cy="192"
+								r="24"
+								fill="none"
+								stroke="#ffd000"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="32"
+							/>
+							<circle
+								cx="56"
+								cy="344"
+								r="24"
+								fill="none"
+								stroke="#ffd000"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="32"
+							/>
+						</svg>
+						<h3>Consultation & Strategy</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+							architecto laboriosam voluptate. Lorem ipsum dolor sit amet.
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class="works" id="works">
+				<div class="works__title">
+					<h2>Recent Works</h2>
+				</div>
+				<div class="works__nav">
+					<ul>
+						<li
+							class="active hoverable works__nav__item"
+							onclick="filterWorks('all')"
+						>
+							All
+						</li>
+						<li
+							class="hoverable works__nav__item"
+							onclick="filterWorks('branding')"
+						>
+							Branding
+						</li>
+						<li
+							class="hoverable works__nav__item"
+							onclick="filterWorks('web-design')"
+						>
+							Web Design
+						</li>
+					</ul>
+				</div>
+
+				<!-- Карточки работ -->
+				<div class="works__cards">
+					<div class="hoverable work-card branding">
+						<div class="work-card__img">
+							<img
+								class="hoverable"
+								src="./images/works/work1.jpg"
+								alt="Branding Work 1"
+							/>
+						</div>
+						<h3 class="hoverable">Branding Work 1</h3>
+					</div>
+
+					<div class="hoverable work-card web-design">
+						<div class="work-card__img">
+							<img
+								class="hoverable"
+								src="./images/works/work2.jpg"
+								alt="Web Design Work 1"
+							/>
+						</div>
+						<h3 class="hoverable">Web Design Work 1</h3>
+					</div>
+
+					<div class="hoverable work-card branding">
+						<div class="work-card__img">
+							<img
+								class="hoverable"
+								src="./images/works/work3.jpg"
+								alt="Branding Work 2"
+							/>
+						</div>
+						<h3 class="hoverable">Branding Work 2</h3>
+					</div>
+
+					<div class="hoverable work-card web-design">
+						<div class="work-card__img">
+							<img
+								class="hoverable"
+								src="./images/works/work4.jpg"
+								alt="Web Design Work 2"
+							/>
+						</div>
+						<h3 class="hoverable">Web Design Work 2</h3>
+					</div>
+
+					<div class="hoverable work-card branding">
+						<div class="work-card__img">
+							<img
+								class="hoverable"
+								src="./images/works/work5.jpg"
+								alt="Branding Work 3"
+							/>
+						</div>
+						<h3 class="hoverable">Branding Work 3</h3>
+					</div>
+
+					<div class="hoverable work-card web-design">
+						<div class="work-card__img">
+							<img
+								class="hoverable"
+								src="./images/works/work6.jpg"
+								alt="Web Design Work 3"
+							/>
+						</div>
+						<h3 class="hoverable">Web Design Work 3</h3>
+					</div>
+				</div>
+			</section>
+		</div>
+		<script src="scripts/main.js"></script>
+		<script src="scripts/particles.js"></script>
+		<script src="scripts/adaptive-sections.js"></script>
+	</body>
+</html>

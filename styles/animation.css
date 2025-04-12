@@ -1,0 +1,46 @@
+@keyframes bottom-scroll-arrow {
+	0% {
+		transform: translateX(-50%) translateY(0);
+	}
+	50% {
+		transform: translateX(-50%) translateY(2vh);
+	}
+	100% {
+		transform: translateX(-50%) translateY(0);
+	}
+}
+
+.hero__content__scroll {
+	animation: bottom-scroll-arrow 1.5s ease-in-out infinite;
+}
+
+@keyframes dynamic-load {
+	0% {
+		opacity: 0;
+	}
+}
+
+body {
+	animation: dynamic-load 0.5s ease;
+}
+
+#connectionCanvas,
+#connectionCanvasBlack {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+@keyframes ripple-animation {
+	0% {
+		opacity: 1;
+		transform: translate(-50%, -50%) scale(1);
+	}
+	100% {
+		opacity: 0;
+		transform: translate(-50%, -50%) scale(5);
+	}
+}

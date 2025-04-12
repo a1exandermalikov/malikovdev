@@ -1,0 +1,250 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	user-select: none;
+	cursor: none;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: #ffffff;
+	font-family: 'Poppins', helvetica;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: visible;
+}
+
+/* Стиль для кастомного курсора */
+.custom-cursor {
+	position: absolute;
+	width: 15px; /* Начальный размер курсора */
+	height: 15px;
+	border: 2px solid #ffd000; /* Бордер */
+	border-radius: 50%; /* Круглая форма */
+	background-color: rgba(
+		255,
+		208,
+		0,
+		0.401
+	); /* Прозрачная заливка с желтым оттенком */
+	pointer-events: none; /* Курсор не должен мешать взаимодействовать с элементами */
+	transition: width 0.2s, height 0.2s, background-color 0.2s, box-shadow 0.2s; /* Плавное увеличение */
+	transform: translate(-50%, -50%); /* Центрируем курсор */
+	z-index: 10000;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2), 0 0 25px rgba(255, 208, 0, 0.5); /* Эффект свечения */
+}
+
+/* Эффект увеличения курсора при наведении */
+.custom-cursor.hovered {
+	width: 30px;
+	height: 30px;
+	background-color: rgba(0, 0, 0, 0.4); /* Увеличиваем прозрачность */
+	border: 2px solid rgba(0, 0, 0, 0.8); /* Увеличиваем бордер */
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.5), 0 0 35px rgba(255, 208, 0, 0.6); /* Более яркое свечение */
+	transition: width 0.2s, height 0.2s, background-color 0.2s, box-shadow 0.2s;
+}
+
+/* Легкое плавное увеличение курсора в обычном состоянии */
+.custom-cursor:hover {
+	transform: scale(1.1);
+}
+
+.ripple {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: rgba(217, 255, 0, 0.491);
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+	z-index: 9999;
+	animation: ripple-animation 0.6s ease-out;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(129, 129, 129);
+	font-size: 0.9vw;
+	letter-spacing: 0.2dvw;
+	text-transform: uppercase;
+	font-weight: 500;
+	z-index: 1;
+}
+
+a:hover {
+	background-image: linear-gradient(to top, #ffd000 40%, #ffffff 0);
+	color: black;
+}
+
+.header__title {
+	font-family: 'Kaushan Script', helvetica;
+	letter-spacing: 0.2dvw;
+	font-size: 4vh;
+	color: #ffffff;
+}
+
+.hero__content h1 {
+	font-size: 13vh;
+	color: #ffffff;
+	font-weight: 600;
+}
+
+.hero__content__icon svg {
+	fill: #ffffff;
+	width: 3vh;
+	height: 3vh;
+	margin: 0 1.5vh;
+}
+
+.hero__content__icon a:hover {
+	background: none;
+	filter: brightness(0.7);
+}
+
+.about {
+	padding: 6vw 10vw;
+	display: flex;
+	align-items: center;
+}
+
+.about__content__text h1 {
+	font-size: 3.1vw;
+	font-family: 'Kaushan Script', helvetica;
+	letter-spacing: 0.2dvw;
+	font-weight: 400;
+}
+
+.about__content__text p {
+	color: rgb(129, 129, 129);
+	font-size: 1vw;
+	line-height: 150%;
+	letter-spacing: 0.05vw;
+}
+
+.about__content__text a {
+	width: max-content;
+	font-size: 1vw;
+}
+
+.services {
+	background-color: #f8f8f8;
+	position: relative;
+	box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.142);
+}
+
+h2 {
+	font-size: 2vw;
+	font-family: 'Kaushan Script', helvetica;
+	letter-spacing: 0.1dvw;
+	font-weight: 400;
+	margin: 2vw 0;
+}
+
+.services__content__card {
+	border-radius: 2vh;
+	margin: 3vh 0;
+	width: 31%;
+}
+
+.services__content__card h3 {
+	font-size: 1.8vh;
+	font-weight: 500;
+	margin: 1vh 0.5vh;
+	text-transform: uppercase;
+	letter-spacing: 0.1vw;
+}
+
+.services__content__card p {
+	color: rgb(129, 129, 129);
+	font-size: 1.6vh;
+	margin: 0 0.5vh;
+}
+
+.services__content__card svg {
+	width: 2.5vw;
+	z-index: 10;
+}
+
+.works {
+	display: flex;
+	flex-direction: column;
+}
+
+.works__nav {
+	margin-bottom: 5vh;
+}
+
+.works__nav ul {
+	display: flex;
+	list-style: none;
+	align-items: center;
+}
+
+.works__nav ul li {
+	margin-right: 2vw;
+	color: #818181;
+	font-size: 1vw;
+	transition: all ease 0.2s;
+	letter-spacing: 0.05vw;
+}
+
+.works__nav__item:hover {
+	color: black;
+}
+
+.works__nav__item.active {
+	color: #ffd000;
+}
+
+.works__cards {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2vw;
+	margin-bottom: 5vh;
+}
+
+.work-card {
+	border: 1px solid #ddd;
+	padding: 20px;
+	border-radius: 2%;
+	text-align: center;
+	background-color: #fff;
+	transition: transform 0.3s ease;
+}
+
+.work-card__img img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.work-card__img {
+	width: 100%;
+	height: 14vw;
+	overflow: hidden;
+	border-radius: 2%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.work-card h3 {
+	margin-top: 1vw;
+	font-size: 1vw;
+	font-weight: 400;
+	letter-spacing: 0.05vw;
+}
+
+.work-card:hover {
+	transform: scale(1.05);
+}
+
+/* Для скрытия карточек в зависимости от категории */
+.work-card.hidden {
+	display: none;
+}

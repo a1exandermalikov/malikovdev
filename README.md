@@ -6,4 +6,5 @@
 
 1. Клонируйте репозиторий на ваш локальный компьютер:
    ```bash
-   git clone https://github.com/ТВОЙ_НИК/malikovdev.uz.git
+   git clone https://github.com/alexandermalikov/malikovdev.uz.git
+   ```

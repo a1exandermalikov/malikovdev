@@ -248,3 +248,8 @@ h2 {
 .work-card.hidden {
 	display: none;
 }
+
+.humb-menu-icon {
+	width: 10vw;
+	display: none;
+}

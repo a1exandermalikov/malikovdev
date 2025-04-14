@@ -1,25 +1,35 @@
-// ---------------------- Particles Canvas (White) ----------------------
 const canvas = document.getElementById('connectionCanvas')
 const ctx = canvas.getContext('2d')
 
 let particlesWhite = []
 let connectionsWhite = []
-const maxParticles = 100
-const maxDistance = 150
-const maxSpeed = 1.5
+let maxParticles = 100
+let maxDistance = 150
+let maxSpeed = 1.5
 
 canvas.width = window.innerWidth
 canvas.height = window.innerHeight
 
+// Проверка на мобильное устройство или планшет
+function isMobileOrTablet() {
+	return window.innerWidth <= 768
+}
+
 // Создание частиц для белого канваса
 function createParticlesWhite() {
+	// Изменяем параметры, если это мобильное устройство или планшет
+	if (isMobileOrTablet()) {
+		maxDistance = 100 // Уменьшаем расстояние между частицами
+		maxParticles = 70 // Уменьшаем количество частиц
+	}
+
 	for (let i = 0; i < maxParticles; i++) {
 		particlesWhite.push({
 			x: Math.random() * canvas.width,
 			y: Math.random() * canvas.height,
 			vx: (Math.random() - 0.5) * maxSpeed,
 			vy: (Math.random() - 0.5) * maxSpeed,
-			size: Math.random() * 0.9 + 0.3, // Уменьшаем размер точек
+			size: Math.random() * 0.6 + 0.2, // Уменьшаем размер точек
 			color: 'rgba(200, 200, 200, 0.8)',
 		})
 	}
@@ -92,7 +102,7 @@ const ctxBlack = canvasBlack.getContext('2d')
 let particlesBlack = []
 let connectionsBlack = []
 const maxParticlesBlack = 60
-const maxSpeedBlack = 2
+const maxSpeedBlack = 1.5
 
 canvasBlack.width = window.innerWidth
 canvasBlack.height = window.innerHeight

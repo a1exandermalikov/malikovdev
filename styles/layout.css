@@ -152,7 +152,7 @@ section {
 	}
 
 	section {
-		padding: 5vw 7vw !important;
+		padding: 7vw 7vw !important;
 	}
 
 	.hero__content__title {
@@ -222,5 +222,156 @@ section {
 
 	.services__content__card svg {
 		width: 5vw;
+	}
+
+	.works__cards {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 4vw;
+	}
+
+	.work-card {
+		padding: 2vw;
+	}
+
+	.works__nav {
+		margin-bottom: 5vw;
+		margin-top: 1vw;
+	}
+
+	.works__nav__item {
+		font-size: 2vw !important;
+		margin-right: 4vw !important;
+	}
+
+	.work-card__img {
+		height: 25vw;
+	}
+
+	.work-card h3 {
+		font-size: 2.5vw;
+		margin-top: 2vw;
+	}
+}
+
+@media (max-width: 450px) {
+	.header {
+		padding: 4vw 7vw !important;
+	}
+	.header__title {
+		font-size: 6vw;
+	}
+
+	nav {
+		display: none !important;
+	}
+
+	section {
+		padding: 10vw 7vw !important;
+	}
+
+	.hero__content__title {
+		height: 23vw;
+	}
+
+	.hero__content h1 {
+		font-size: 14vw;
+	}
+
+	.hero__content__icon svg {
+		width: 6vw;
+		height: 6vw;
+		margin: 0 2vw;
+	}
+
+	.hero__content__scroll {
+		width: 5vh;
+		height: 5vh;
+		bottom: 10vw;
+	}
+
+	.about__content__img img {
+		width: 100%;
+		margin-right: 0;
+	}
+
+	.about__content__img h1 {
+		font-size: 7vw;
+		position: absolute;
+		color: #ffffff;
+	}
+
+	.about__content__img {
+		display: grid;
+		place-items: center;
+		position: relative;
+	}
+
+	.about__content__text {
+		margin: 5vw 0 0 0;
+	}
+
+	.about__content__text p {
+		font-size: 3vw;
+		margin-bottom: 5vw;
+	}
+
+	.about__content__text a {
+		font-size: 4vw;
+	}
+
+	h2 {
+		font-size: 6vw;
+	}
+
+	.services__content__card {
+		width: 100%;
+	}
+
+	.services__content__card h3 {
+		font-size: 4vw;
+	}
+
+	.services__content__card p {
+		font-size: 3vw;
+	}
+
+	.services__content__card svg {
+		width: 8vw;
+	}
+
+	.works__cards {
+		grid-template-columns: repeat(1, 1fr);
+		gap: 8vw;
+	}
+
+	.work-card {
+		padding: 2vw;
+	}
+
+	.works__nav {
+		margin-bottom: 6vw;
+		margin-top: 2vw;
+	}
+
+	.works__nav__item {
+		font-size: 3vw !important;
+		margin-right: 4vw !important;
+	}
+
+	.work-card__img {
+		height: 50vw;
+	}
+
+	.work-card h3 {
+		font-size: 4vw;
+		margin-top: 2vw;
+	}
+
+	.custom-cursor {
+		display: none !important;
+	}
+
+	.humb-menu-icon {
+		display: initial;
 	}
 }

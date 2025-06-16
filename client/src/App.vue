@@ -21,7 +21,7 @@ const fetchNews = async () => {
 }
 
 const formatDate = timestamp => {
-	return new Date(timestamp).toLocaleDateString('ru-RU', {
+	return new Date(timestamp).toLocaleDateString('en-EN', {
 		day: 'numeric',
 		month: 'short',
 		year: 'numeric',

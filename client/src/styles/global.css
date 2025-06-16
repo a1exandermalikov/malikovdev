@@ -1,0 +1,40 @@
+@import './colors.css';
+@import './fonts.css';
+
+:root {
+	--color-50: var(--color-neutral-50);
+	--color-100: var(--color-neutral-100);
+	--color-200: var(--color-neutral-200);
+	--color-300: var(--color-neutral-300);
+	--color-400: var(--color-neutral-400);
+	--color-500: var(--color-neutral-500);
+	--color-600: var(--color-neutral-600);
+	--color-700: var(--color-neutral-700);
+	--color-800: var(--color-neutral-800);
+	--color-900: var(--color-neutral-900);
+	--color-950: var(--color-neutral-950);
+
+	--text-normal: var(--color-50);
+	--text-muted: var(--color-500);
+	--radius: 5px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: var(--font-1);
+	outline: none;
+}
+
+body {
+	background-color: var(--color-950);
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	overflow: hidden; /* Если используешь scroll внутри компонента */
+	touch-action: pan-y;
+}

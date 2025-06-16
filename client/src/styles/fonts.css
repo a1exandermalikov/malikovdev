@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Jura:wght@300..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Plaster&family=Quicksand:wght@300..700&family=Revalia&family=Special+Elite&display=swap');
+
+:root {
+	--font-1: 'Quicksand';
+	--font-2: 'Exo 2';
+	--font-3: 'Nunito Sans';
+	--font-4: 'Special Elite';
+	--font-5: 'Plaster';
+	--font-6: 'Jura';
+	--font-7: 'Comfortaa';
+	--font-8: 'Revalia';
+
+	--font-xs: 6px;
+	--font-sm: 7px;
+	--font-md: 8px;
+	--font-lg: 10px;
+	--font-xl: 13px;
+	--font-2xl: 15px;
+	--font-3xl: 18px;
+	--font-4xl: 24px;
+	--font-5xl: 30px;
+	--font-6xl: 36px;
+	--font-7xl: 48px;
+	--font-8xl: 60px;
+	--font-9xl: 72px;
+	--font-10xl: 90px;
+	--font-11xl: 108px;
+	--font-12xl: 128px;
+}
+
+/* Планшеты и меньше */
+@media (max-width: 768px) {
+	:root {
+		--font-xs: 5px;
+		--font-sm: 6px;
+		--font-md: 7px;
+		--font-lg: 9px;
+		--font-xl: 11px;
+		--font-2xl: 13px;
+		--font-3xl: 15px;
+		--font-4xl: 18px;
+		--font-5xl: 21px;
+		--font-6xl: 24px;
+		--font-7xl: 30px;
+		--font-8xl: 36px;
+		--font-9xl: 42px;
+		--font-10xl: 52px;
+		--font-11xl: 62px;
+		--font-12xl: 72px;
+	}
+}
+
+/* Мобильные телефоны */
+@media (max-width: 480px) {
+	:root {
+		--font-xs: 4px;
+		--font-sm: 5px;
+		--font-md: 6px;
+		--font-lg: 8px;
+		--font-xl: 10px;
+		--font-2xl: 12px;
+		--font-3xl: 14px;
+		--font-4xl: 16px;
+		--font-5xl: 18px;
+		--font-6xl: 20px;
+		--font-7xl: 24px;
+		--font-8xl: 28px;
+		--font-9xl: 32px;
+		--font-10xl: 38px;
+		--font-11xl: 44px;
+		--font-12xl: 52px;
+	}
+}

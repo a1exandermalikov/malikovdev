@@ -1,6 +1,7 @@
 <script setup>
 import { onMounted, onUnmounted, ref } from 'vue'
 import { Icon } from '@iconify/vue'
+import { supabase } from '../admin/src/lib/supabase'
 import Header from './components/Header.vue'
 import TechBackground from './components/TechBackground.vue'
 import Button from './components/Button.vue'
@@ -8,6 +9,24 @@ import Button from './components/Button.vue'
 const sections = ref([])
 let currentIndex = 0
 let isScrolling = false
+
+const news = ref([])
+
+const fetchNews = async () => {
+	const { data, error } = await supabase
+		.from('news')
+		.select('*')
+		.order('created_at', { ascending: false })
+	if (!error) news.value = data
+}
+
+const formatDate = timestamp => {
+	return new Date(timestamp).toLocaleDateString('ru-RU', {
+		day: 'numeric',
+		month: 'short',
+		year: 'numeric',
+	})
+}
 
 const scrollToIndex = index => {
 	if (index < 0 || index >= sections.value.length) return
@@ -26,6 +45,7 @@ const goTo = id => {
 
 onMounted(() => {
 	sections.value = [...document.querySelectorAll('.viewport-section')]
+	fetchNews()
 
 	const handleWheel = e => {
 		if (isScrolling) return
@@ -74,7 +94,6 @@ onMounted(() => {
 			<div class="landing-hero">
 				<Header />
 				<TechBackground />
-
 				<div class="hero-content-wrapper">
 					<div class="hero-content-inner">
 						<h2>Engineering the web, end to end.</h2>
@@ -98,7 +117,6 @@ onMounted(() => {
 						</div>
 					</div>
 				</div>
-
 				<div class="navigation-indicator">
 					<Icon icon="mdi:arrow-down" class="icon" />
 				</div>
@@ -113,45 +131,26 @@ onMounted(() => {
 						<div class="timeline-component">
 							<h3 class="timeline-header">Latest achievements</h3>
 							<div class="timeline-content">
-								<div class="timeline-entry">
+								<div v-for="item in news" :key="item.id" class="timeline-entry">
 									<span class="timeline-marker"></span>
 									<div>
-										<div class="entry-timestamp">2 days ago</div>
+										<div class="entry-timestamp">
+											{{ formatDate(item.created_at) }}
+										</div>
 										<div class="entry-description">
-											Created 3 portfolios and 18 projects for members of the
-											<strong>InFlow</strong> community — handcrafted by me.
+											{{ item.body }}
 										</div>
 									</div>
 								</div>
 
-								<div class="timeline-entry">
-									<span class="timeline-marker"></span>
-									<div>
-										<div class="entry-timestamp">1 month ago</div>
-										<div class="entry-description">
-											Started development of the developer community platform
-											<strong>Information Flow</strong>.
-										</div>
-									</div>
-								</div>
-								<div class="timeline-entry">
-									<span class="timeline-marker"></span>
-									<div>
-										<div class="entry-timestamp">1 year ago</div>
-										<div class="entry-description">
-											Developed the ideology of an artificial mind:
-											<strong>Edit and Emmet</strong>. Development paused due to
-											lack of sufficient knowledge.
-										</div>
-									</div>
-								</div>
-
-								<div class="timeline-footer">
+								<div class="timeline-footer" v-if="news.length">
 									<a href="#" class="timeline-link">View full log →</a>
 								</div>
+								<div v-else class="entry-description">Новостей пока нет.</div>
 							</div>
 						</div>
 					</div>
+
 					<div class="profile-content">
 						<div class="profile-image-section">
 							<div class="developer-portrait">
@@ -172,10 +171,12 @@ onMounted(() => {
 									development, and have experience with tools like Bootstrap,
 									ShadCN, and Iconify. I'm constantly learning and evolving,
 									always looking to solve real-world problems through code.
-									Whether it's a landing page, an Electron app, or a fullstack
-									platform — I engineer the web, end to end.
+									Whether it's a landing page, an Electron app, или fullstack
+									платформа — I engineer the web, end to end.
 								</p>
 							</div>
+
+							<!-- Tech stack -->
 							<div class="technology-stack">
 								<Button tooltip="HTML5"
 									><Icon icon="devicon:html5" class="icon"

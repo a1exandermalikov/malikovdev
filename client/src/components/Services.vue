@@ -236,4 +236,21 @@ import { Icon } from '@iconify/vue'
 .tags span .icon {
 	font-size: var(--font-xl);
 }
+
+@media (max-width: 768px) {
+	.services {
+		padding: 60px 24px;
+	}
+	.services__grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.service-card {
+		gap: 20px;
+	}
+
+	.service-title {
+		justify-content: space-between;
+	}
+}
 </style>

@@ -120,40 +120,40 @@ const education = [
         <div class="technology-category">
           <h4 class="category-title">Frontend</h4>
           <div class="technology-items">
-            <Button tooltip="React">
+            <Button href="https://react.dev/" tooltip="React">
               <Icon class="icon" icon="logos:react" />
             </Button>
-            <Button tooltip="Vue.js">
+            <Button href="https://vuejs.org/" tooltip="Vue.js">
               <Icon class="icon" icon="logos:vue" />
             </Button>
-            <Button tooltip="HTML5">
+            <Button href="https://developer.mozilla.org/en-US/docs/Web/HTML" tooltip="HTML5">
               <Icon class="icon" icon="devicon:html5" />
             </Button>
-            <Button tooltip="Shadcn/ui">
+            <Button href="https://ui.shadcn.com/" tooltip="Shadcn/ui">
               <Icon class="icon" icon="simple-icons:shadcnui" />
             </Button>
-            <Button tooltip="Tailwind CSS">
+            <Button href="https://tailwindcss.com/" tooltip="Tailwind CSS">
               <Icon class="icon" icon="logos:tailwindcss-icon" />
             </Button>
-            <Button tooltip="Bootstrap">
+            <Button href="https://getbootstrap.com/" tooltip="Bootstrap">
               <Icon class="icon" icon="logos:bootstrap" />
             </Button>
-            <Button tooltip="Css3">
+            <Button href="https://developer.mozilla.org/en-US/docs/Web/CSS" tooltip="Css3">
               <Icon class="icon" icon="devicon:css3" />
             </Button>
-            <Button tooltip="Sass">
+            <Button href="https://sass-lang.com/" tooltip="Sass">
               <Icon class="icon" icon="material-icon-theme:sass" />
             </Button>
-            <Button tooltip="Figma">
+            <Button href="https://figma.com/" tooltip="Figma">
               <Icon class="icon" icon="logos:figma" />
             </Button>
-            <Button tooltip="WordPress">
+            <Button href="https://wordpress.org/" tooltip="WordPress">
               <Icon class="icon" icon="bi:wordpress" />
             </Button>
-            <Button tooltip="Vite">
+            <Button href="https://vite.dev/" tooltip="Vite">
               <Icon class="icon" icon="logos:vitejs" />
             </Button>
-            <Button tooltip="Progressive Web App">
+            <Button href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps" tooltip="Progressive Web App">
               <Icon class="icon" icon="logos:pwa" />
             </Button>
 
@@ -163,19 +163,19 @@ const education = [
         <div class="technology-category">
           <h4 class="category-title">Backend</h4>
           <div class="technology-items">
-            <Button tooltip="Node.js">
+            <Button href="https://nodejs.org/" tooltip="Node.js">
               <Icon class="icon" icon="logos:nodejs-icon-alt" />
             </Button>
-            <Button tooltip="Express">
+            <Button href="https://expressjs.com/" tooltip="Express">
               <Icon class="icon" icon="skill-icons:expressjs-light" />
             </Button>
-            <Button tooltip="Next.js">
+            <Button href="https://nextjs.org/" tooltip="Next.js">
               <Icon class="icon" icon="skill-icons:nextjs-light" />
             </Button>
-            <Button tooltip="Django">
+            <Button href="https://www.djangoproject.com/" tooltip="Django">
               <Icon class="icon" icon="logos:django-icon" />
             </Button>
-            <Button tooltip="Fastapi">
+            <Button href="https://fastapi.tiangolo.com/" tooltip="Fastapi">
               <Icon class="icon" icon="logos:fastapi-icon" />
             </Button>
           </div>
@@ -184,16 +184,16 @@ const education = [
         <div class="technology-category">
           <h4 class="category-title">Database</h4>
           <div class="technology-items">
-            <Button tooltip="MongoDB">
+            <Button href="https://www.mongodb.com/" tooltip="MongoDB">
               <Icon class="icon" icon="logos:mongodb-icon" />
             </Button>
-            <Button tooltip="PostgreSQL">
+            <Button href="https://www.postgresql.org/" tooltip="PostgreSQL">
               <Icon class="icon" icon="logos:postgresql" />
             </Button>
-            <Button tooltip="SQLite3">
+            <Button href="https://www.sqlite.org/" tooltip="SQLite3">
               <Icon class="icon" icon="devicon:sqlite" />
             </Button>
-            <Button tooltip="Supabase">
+            <Button href="https://supabase.com/" tooltip="Supabase">
               <Icon class="icon" icon="logos:supabase-icon" />
             </Button>
           </div>
@@ -202,19 +202,19 @@ const education = [
         <div class="technology-category">
           <h4 class="category-title">DevOps & Tools</h4>
           <div class="technology-items">
-            <Button tooltip="aaPanel">
+            <Button href="https://www.aapanel.com/" tooltip="aaPanel">
               <Icon class="icon" icon="tabler:hexagon-letter-a-filled" />
             </Button>
-            <Button tooltip="Git">
+            <Button href="https://git-scm.com/" tooltip="Git">
               <Icon class="icon" icon="logos:git-icon" />
             </Button>
-            <Button tooltip="CI/CD">
+            <Button href="https://github.com/" tooltip="CI/CD">
               <Icon class="icon" icon="mdi:source-branch" />
             </Button>
-            <Button tooltip="Linux">
+            <Button href="https://www.linux.org/" tooltip="Linux">
               <Icon class="icon" icon="logos:linux-tux" />
             </Button>
-            <Button tooltip="VPS & Server">
+            <Button href="https://www.vps.com/" tooltip="VPS & Server">
               <Icon class="icon" icon="material-icon-theme:folder-server" />
             </Button>
           </div>
@@ -222,16 +222,16 @@ const education = [
         <div class="technology-category">
           <h4 class="category-title">Programming Languages</h4>
           <div class="technology-items">
-            <Button tooltip="C">
+            <Button href="https://www.c-lang.org/" tooltip="C">
               <Icon class="icon" icon="streamline-logos:c-language-logo-solid" />
             </Button>
-            <Button tooltip="Python">
+            <Button href="https://www.python.org/" tooltip="Python">
               <Icon class="icon" icon="logos:python" />
             </Button>
-            <Button tooltip="JavaScript">
+            <Button href="https://www.javascript.com/" tooltip="JavaScript">
               <Icon class="icon" icon="logos:javascript" />
             </Button>
-            <Button tooltip="TypeScript">
+            <Button href="https://www.typescriptlang.org/" tooltip="TypeScript">
               <Icon class="icon" icon="logos:typescript-icon" />
             </Button>
           </div>

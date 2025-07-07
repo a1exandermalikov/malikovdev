@@ -1,0 +1,303 @@
+
+
+/*  ===== Dark Mode =====  */
+.dark-mode .common-text-link {
+    color: #ffffff;
+}
+.dark-mode .common-text-link::before {
+    background: #ffffff;
+}
+.dark-mode .popup-menu-wrap,
+.dark-mode .theme-btn::before,
+.dark-mode {
+    background: #000;
+}
+.dark-mode .header-wrap {
+    border-bottom-color: #161616;
+}
+.dark-mode .theme-btn {
+    background: #ffffff;
+    color: #000;
+    border-color: #ffffff;
+}
+.section-header p,
+.dark-mode .header-wrap .header-local-time-box #coordinates,
+.dark-mode .header-wrap .header-local-time-box #realtime,
+.dark-mode .popup-menu-wrap .popup-menu-header .local-temperature #coordinates,
+.dark-mode .popup-menu-wrap .popup-menu-header .local-temperature #realtime,
+.dark-mode .popup-menu ul li a,
+.dark-mode .copyright #back-to-top, 
+.dark-mode .copyright p,
+.dark-mode .theme-btn:hover {
+    color: #ffffff;
+}
+.dark-mode .popup-menu-wrap .popup-menu-header .local-temperature #coordinates,
+.dark-mode .popup-menu-wrap .popup-menu-header .local-temperature #realtime {
+    font-weight: 600;
+}
+.dark-mode .hero-sec .hero-footer-wrap .hero-footer-right p,
+.dark-mode .header-wrap .header-local-time-box,
+.dark-mode .popup-menu-wrap .popup-menu-header .local-temperature {
+    color: rgba(255, 255, 255, 0.6);
+}
+.dark-mode .link-with-line::before,
+.dark-mode .humberg-menu span {
+    background: #ffffff;
+}
+.dark-mode .available-status {
+    color: rgba(255, 255, 255, 0.7);
+}
+.dark-mode .featured-card .content .date {
+    color: rgba(255, 255, 255, 0.75);
+    border-color: rgb(31, 31, 31);
+}
+.dark-mode .featured-card .content .subtitle {
+    color: rgb(148, 148, 148);
+}
+.dark-mode .experience-box p {
+    color: rgba(255, 255, 255, 0.5);
+}
+.dark-mode .faq-item .accordion-header button,
+.dark-mode .experience2-box .experience2-box-header,
+.dark-mode .motivation-sec .motivation-content p,
+.dark-mode .experience-box h4 > span:last-child,
+.dark-mode .about-bottom-content-wrap .about-bottom-content p,
+.dark-mode .section-header2 .title,
+.dark-mode .featured-card .content .title,
+.dark-mode .hero-sec .hero-footer-wrap .hero-footer-right a, 
+.dark-mode .hero-sec .hero-footer-wrap p,
+.dark-mode .social-links li a,
+.dark-mode h1, 
+.dark-mode h2, 
+.dark-mode h3, 
+.dark-mode h4, 
+.dark-mode h5, 
+.dark-mode h6, 
+.dark-mode strong {
+    color: #ffffff;
+}
+.landing-page .header-wrap .header-local-time-box .logo {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    font-family: var(--font_instrument);
+    letter-spacing: 0;
+    gap: 1px;
+}
+.dark-mode .experience-popup .experience-popup-content-wrap .close-experience-popup-btn, 
+.dark-mode .popup-menu-wrap .popup-menu-header .popup-menu-close-btn .icon {
+    background: none;
+    border: 1px solid rgb(29, 29, 29);
+}
+.landing-page .header-wrap .header-local-time-box .logo span {
+    font-size: 22px;
+}
+.dark-mode .social-links li a svg {
+    fill: #fff;
+}
+.dark-mode .header-wrap .theme-btn {
+    background: none;
+    color: #ffffff;
+}
+.dark-mode .header-wrap .theme-btn::before {
+    background: #fff;
+}
+.dark-mode .header-wrap .theme-btn:hover {
+    color: #000;
+}
+.dark-mode .featured-card {
+    border-color: rgb(31, 31, 31);
+}
+.dark-mode .featured-card .content {
+    background: rgb(10, 10, 10);
+}
+.dark-mode .testimonial-box,
+.dark-mode .favourite-stack-box,
+.dark-mode .experience-popup .experience-popup-content-wrap,
+.dark-mode .experience-box,
+.dark-mode .partner-box {
+    border-color: #1d1d1d;
+    background: #0a0a0a;
+}
+.dark-mode .experience-box .experience-button-box .experience-button {
+    background: rgb(13, 13, 13);
+    border: 1px solid rgb(29, 29, 29);
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+.dark-mode .experience-box .experience-button-box .experience-button:hover {
+    background: #ffffff;
+}
+.dark-mode .experience-box .experience-button-box .experience-button:hover svg  {
+    color: #0a0a0a;
+}
+.dark-mode .theme-btn3,
+.dark-mode .experience-popup .experience-popup-content-wrap .experience-popup-content .experience-popup-header .price {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+.dark-mode .experience-popup .experience-popup-content-wrap .experience-popup-content .experience-popup-header h3 {
+    border-color: #ffffff1a;
+}
+.dark-mode .experience-popup .experience-popup-content-wrap .experience-popup-features .experience-popup-feature,
+.dark-mode .experience-popup .experience-popup-content-wrap .experience-popup-content p {
+    color: rgba(255, 255, 255, 0.55);
+}
+.dark-mode .theme-btn2 {
+    background: #ffffff;
+    color: #000;
+}
+.dark-mode .experience2-box {
+    border-color: #262626;
+}
+.dark-mode .experience2-box .experience2-box-body p {
+    color: rgba(255, 255, 255, 0.6);
+}
+.dark-mode .favourite-stack-box .content,
+.dark-mode .favourite-stack-box .favourite-stack-box-left {
+    border-color: rgba(255, 255, 255, .06);
+    background: #0d0d0d;
+}
+.dark-mode .favourite-stack-box .content .content-body p {
+    color: rgba(255, 255, 255, 0.5);
+}
+.dark-mode .testimonial-box .testimonial-content p {
+    color: #ffffff;
+}
+.dark-mode .testimonial-box .testimonial-content {
+    background: #0d0d0d;
+    border-color: rgba(255, 255, 255, .1);
+}
+.dark-mode .faq-item:first-of-type, 
+.dark-mode .faq-item:last-of-type, 
+.dark-mode .faq-item {
+    background: rgb(10, 10, 10);
+    border-color: rgb(29, 29, 29) !important;
+}
+.dark-mode .faq-item .accordion-header button:hover:not([aria-expanded=true]) {
+    background: rgb(15, 15, 15);
+}
+.dark-mode .faq-item .accordion-body p {
+    border-color: rgb(38, 38, 38);
+    color: rgba(122, 122, 122, 0.9);
+}
+.dark-mode .faq-item .accordion-header button i {
+    color: rgba(255, 255, 255, 0.6);
+}
+.dark-mode .work-detail-header-infos .work-detail-header-left h1,
+.dark-mode .footer-area .footer-big-text,
+.dark-mode .faq-item .accordion-header button[aria-expanded=true] i {
+    color: #ffffff;
+}
+.dark-mode .copyright #back-to-top::before,
+.dark-mode .social-links li a::before {
+    background: #ffffff;
+}
+.dark-mode .work-detail-header-infos .work-detail-header-left p {
+    color: #a3a3a3;
+}
+.dark-mode .work-detail-header-infos .work-detail-header-right ul li {
+    color: #fff;
+    border-color: rgb(38, 38, 38);
+}
+.dark-mode .work-detail-header-infos .work-detail-header-right ul li span {
+    color: rgb(148, 148, 148);
+}
+.dark-mode .work-detail-header-infos .work-detail-header-right ul li a:hover {
+    color: #ffffff;
+}
+.dark-mode .work-detail-header-infos .work-detail-header-right ul li a::before {
+    background: #fff;
+}
+.dark-mode .work-detail2-content-box {
+    border-color: rgb(38, 38, 38);
+}
+.dark-mode .pricing-box .pricing-box-header h4,
+.dark-mode .pricing-sec .pricing-nav li .nav-link,
+.dark-mode .work-detail2-content-box p {
+    color: #fff;
+}
+.dark-mode .work-detail2-content-box h4 {
+    color: rgba(255, 255, 255, 0.5);
+}
+.dark-mode .pricing-sec .pricing-nav {
+    border-color: #fff;
+}
+.dark-mode .pricing-sec .pricing-nav li .nav-link.active {
+    background: #fff;
+    color: #000;
+}
+.dark-mode .pricing-box {
+    background: rgb(10, 10, 10);
+    border-color: rgba(255, 255, 255, 0.07);
+}
+.dark-mode .pricing-box .pricing-box-header {
+    background: rgb(13, 13, 13);
+    border-color: rgba(255, 255, 255, 0.04);
+}
+.dark-mode .pricing-tooltip .tooltip-btn {
+    color: #fff;
+    background: rgb(10, 10, 10);
+    border-color: rgba(255, 255, 255, 0.07);
+}
+.dark-mode .pricing-tooltip .tooltip-content {
+    background: rgb(10, 10, 10);
+    border-color: rgba(255, 255, 255, 0.07);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 20px 0px;
+}
+.dark-mode .pricing-box .pricing-box-header .day-revisions > span,
+.dark-mode .pricing-tooltip .tooltip-content p {
+    color: #fff;
+}
+.dark-mode .pricing-tooltip .tooltip-content ul li {
+    color: rgba(255, 255, 255, 0.5);
+}
+.dark-mode .pricing-box .pricing-box-header .day-revisions > span svg {
+    fill: #fff;
+}
+.dark-mode .pricing-box .pricing-box-header .discount {
+    border-color: rgba(255, 255, 255, 0.07);
+}
+.dark-mode .pricing-box .pricing-box-header p,
+.dark-mode .pricing-box .pricing-box-header .discount {
+    color: rgba(255, 255, 255, 0.5);
+}
+.dark-mode .pricing-box .pricing-box-features ul li {
+    color: rgba(255, 255, 255, 0.8);
+}
+.dark-mode .pricing-box .pricing-box-features ul li svg {
+    stroke: #fff;
+}
+.dark-mode .contact-sec .contact-form-wrap .contact-header p {
+    color: rgba(255, 255, 255, 0.5);
+}
+.dark-mode .contact-form #ajax-form textarea, 
+.dark-mode .contact-form #ajax-form input {
+    color: #fff;
+    background: rgb(15, 15, 15);
+}
+.dark-mode .contact-info-box h4 {
+    color: rgb(148, 148, 148);
+}
+.dark-mode .contact-info-box ul li,
+.dark-mode .contact-info-box ul li a {
+    color: #ffffff;
+}
+.dark-mode .contact-info-box ul li a::before {
+    background: #fff;
+}
+.dark-mode .contact-infos-wrap .contact-infos {
+    border-color: rgb(38, 38, 38);
+}
+.dark-mode .work-detail-text-anim-wrap ul li {
+    color: #fff;
+}
+.dark-mode .work-detail-text-anim-wrap ul li span {
+    color: rgba(255, 255, 255, 0.5);
+}
